@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #007BFF;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-section, .right-section {
+            width: 48%;
+        }
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-size: 18px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .payment-info {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .payment-info h3 {
+            margin-bottom: 10px;
+        }
+        .payment-info ul {
+            list-style: none;
+            padding: 0;
+        }
+        .payment-info ul li {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Welcome to Our Earning Platform</h1>
+    </div>
+
+    <div class="container">
+        <!-- Left Section: Login Form -->
+        <div class="left-section">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Section: Registration Form -->
+        <div class="right-section">
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="reg-email">Email Address:</label>
+                        <input type="email" id="reg-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Information Section -->
+    <div class="payment-info">
+        <h3>Payment Methods Accepted:</h3>
+        <ul>
+            <li>EasyPaisa</li>
+            <li>JazzCash</li>
+            <li>Bank Account</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Earning Platform. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
